@@ -417,7 +417,7 @@ h1, h2, h3, h4, h5, h6 {
 #post__content li > p {
   margin: 0; }
 #post__content a {
-  color: #7d8b99;
+  color: #3F79D0;
   word-break: break-all; }
   #post__content a:hover {
     text-decoration: underline; }
@@ -1257,3 +1257,36 @@ pre > code {
 
 /* Literal.Number.Integer.Long */
 .own{font-size:0.5em;color:green;}
+
+/* color */
+.gray {
+    color: #999!important
+}
+
+.red {
+    color: #d80000!important
+}
+
+.orange {
+    color: #fa6705!important
+}
+
+.green {
+    color: #63a72a!important
+}
+
+.blue {
+    color: #096ed6!important
+}
+
+.gray999 {
+    color: #999!important
+}
+
+.gray666 {
+    color: #666!important
+}
+
+.gray333 {
+    color: #333!important
+}
