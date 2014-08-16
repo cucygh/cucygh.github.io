@@ -1,0 +1,11 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>{{page.title}}</title>
+	<link rel="stylesheet" href="/assets/css/base/embed.default.css"/>
+	{% for per in page.css %}
+	<link rel="stylesheet" href="/assets/css/{{per}}"/>
+	{% endfor %}
+</head>
+<body>

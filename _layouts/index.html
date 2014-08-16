@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!--[if lte IE 9]><meta http-equiv="refresh" content="0;url=/ie.html"><![endif]-->
+
+    <title>{{ page.title }}</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+	<link rel="stylesheet" href="/assets/css/embed.default.css"/>
+  </head>
+  <body>
+    <aside id="sidebar">
+      <nav id="tags">
+        <a href="/index.html" id="avatar"></a>
+
+        <ul id="tags__ul">
+          <li id="js-label1" class="tags__li tags-btn active" tags="pl__all">所有文章</li>
+          <li id="js-label2" class="tags__li tags-btn" tags="css">走进 CSS</li>
+          <li id="js-label3" class="tags__li tags-btn" tags="js">Javascript</li>
+          <li id="js-label3" class="tags__li tags-btn" tags="tool">前端工具</li>
+          <li id="js-label4" class="tags__li tags-btn" tags="how">彩票算法</li>
+          <li id="js-label5" class="tags__li tags-btn" tags="what">彩票知识</li>
+          <li id="js-label5" class="tags__li tags-btn" tags="flex">前端架构</li>
+          <li id="js-label5" class="tags__li tags-btn" tags="other">杂谈</li>
+        </ul>
+
+        <div id="tags__bottom">
+          <a href="mailto:cuc_ygh@163.com" id="icon-email" class="tags-btn fontello"></a>
+          <a href="/rss.xml" id="icon-feed" class="tags-btn fontello"></a>
+        </div>
+      </nav> <!-- end #tags -->
+
+      <div id="posts-list">
+        <form action="" id="search-form">
+          <a href="/index.html" id="mobile-avatar"></a>
+          <!-- NOTE: input field is disabled by default -->
+          <input id="search-input" type="text" placeholder="Search Invalid" disabled >
+        </form>
+
+        <nav id="pl__container">
+        {% for post in site.posts %}
+          <a class="{{ post.categories }} pl__all" href="{{ post.url }}"><span class="pl__circle"></span><span class="pl__title">{{ post.title }}</span><span class="pl__date">{{ post.date | date: "%b %Y" }}</span></a>
+        {% endfor %}
+        </nav>
+      </div> <!-- end #posts-list -->
+    </aside> <!-- end #sidebar -->
+
+    <div id="post">
+      <div id="pjax">
+        {{ content }}
+      </div> <!-- end #pjax -->
+
+      <div id="post__toc-trigger">
+        <div id="post__toc">
+          <span id="post__toc-title">内容快速入口</span>
+          <ul id="post__toc-ul"></ul>
+        </div>
+      </div>
+    </div> <!-- end #post -->
+
+    <button id="js-fullscreen"><span id="icon-arrow" class="fontello"></span></button>
+
+    <script type="text/javascript" src="/assets/js/lib/jquery/2.0.3/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="/assets/js/gallery/pjax/1.0.0/jquery.pjax.js"></script>
+    <script type="text/javascript" src="/assets/js/gallery/nprogress/1.0.0/nprogress.js"></script>
+	<script type="text/javascript" src="/assets/js/gallery/duoshuo/1.0.0/embed.js"></script>
+	<script type="text/javascript" src="/assets/js/gallery/zoom/1.0.0/content_zoom.js"></script>
+    <script type="text/javascript" src="/assets/js/app/script.js"></script>
+  </body>
+</html>

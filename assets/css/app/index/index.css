@@ -1,0 +1,93 @@
+@import '../../base/reset.css';
+@import '../../base/prettify.css';
+@import '../../base/zoom.css';
+@import '../../semantic/elements/header.css';
+@import '../../semantic/elements/segment.css';
+@import '../../semantic/elements/icon.css';
+@import '../../semantic/collections/breadcrumb.css';
+@import '../../semantic/collections/menu.css';
+@import '../../semantic/views/list.css';
+@import '../../semantic/views/item.css';
+body,html{background:#eee;}
+.container{width:960px;margin:auto;}
+.ui.segment.top{background:#333;color:#fff;}
+.ui.segment.top .section,.ui.segment.top .divider{color:#fff;font-size:1.2em;}
+.profile dt{font-weight:bold;font-size:14px;}
+.profile dd{height:25px;line-height:25px;text-indent:2em;}
+/* waterfall */
+#water{ text-align:center}
+#water .cell{ padding:5px 5px 0; border:1px solid #E3E3E3; background:#F5F5F5; margin-top:10px}
+#water p{ line-height:20px; margin-top:5px}
+#header{position:fixed;left:0;top:0;width:100%;}
+.article{margin-top:50px;}
+#footer{position:fixed;bottom:0;left:0;width:100%;}
+/* book theme */
+.magzine-list li {
+width: 160px;
+height: 210px;
+padding: 17px;
+float: left;
+margin-left: 33px;
+position: relative;
+}
+.m-cv {
+position: relative;
+width: 160px;
+height: 120px;
+z-index: 1;
+}
+.m-cv img {
+width: 160px;
+height: 120px;
+display: block;
+margin: 0 auto;
+}
+.m-cv span {
+position: absolute;
+width: 44px;
+height: 15px;
+left: 0;
+top: 105px;
+font: 12px/15px arial,'ËÎÌå';
+text-align: center;
+color: #FFF;
+}
+.magzine-list strong {
+font: 14px/24px 'Î¢ÈíÑÅºÚ','ËÎÌå';
+padding-top: 20px;
+display: block;
+text-align: center;
+color: #333;
+background-color: #FFF;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+width: 100%;
+}
+.m-sn {
+background-color: #FFF;
+text-align: center;
+font-size: 12px;
+line-height: 22px;
+height: 22px;
+color: #999;
+padding-bottom: 24px;
+}
+.m-sn span {
+display: inline-block;
+background: url(/assets/img/theme/article-sprite-v1.png) no-repeat -241px -278px;
+width: 18px;
+height: 15px;
+margin-right: 2px;
+vertical-align: middle;
+}
+.magzine-list a {
+background: url(/assets/img/theme/mg-bg_dd5140f.png) no-repeat 1px 0;
+z-index: 10;
+position: absolute;
+left: 0;
+top: 0;
+width: 194px;
+height: 244px;
+_background-image: url(/assets/img/theme/_mg-bg_b65ed6f.png);
+}

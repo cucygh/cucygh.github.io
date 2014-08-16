@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+a.artZoom { position:relative; display:inline-block; *zoom:1;*display:inline; padding:3px; background:#FFF; border:solid 1px #F1F1F1; text-decoration:none; color:#CCC; cursor:url('../../img/zoom/zoomin.cur'), pointer; position:relative;  }
+a.artZoom:hover { text-decoration:none; }
+a.artZoom span.loading { display:block; width:16px; height:16px; line-height:16px; overflow:hidden; text-indent:-9999em;  padding-left:20px; margin:2px 0; font-size:9px; background:#FFF url(../../img/zoom/loading.gif) no-repeat 0 0; filter:alpha(opacity=70); opacity:0.7; }
+
+.artZoomBox { position:relative; }
+.artZoomBox .tool { visibility:hidden; position:absolute; top:8px; left:8px; }
+.artZoomBox.js_hover .tool { visibility:visible; }
+.artZoomBox .tool a { float:left; display:block; height:24px; width:24px; text-indent:-9999em; overflow:hidden; color:#FFF; background-color:#3A6EA5; text-decoration:none; filter:alpha(opacity=50); opacity:0.5; background-image:url(../../img/zoom/photoTool.gif); background-repeat:no-repeat;  }
+.artZoomBox .tool a:hover { background-color:#FFF; filter:alpha(opacity=80); opacity:0.8; }
+.artZoomBox .tool a.hideImg { display:none; }
+.artZoomBox .tool a.imgLeft { background-position:0 0; }
+.artZoomBox .tool a.imgLeft { background-position:-24px 0; }
+.artZoomBox .tool a.viewImg { background-position:0 -24px; }
+.artZoomBox a.maxImgLink { cursor:url('../../img/zoom/zoomout.cur'), pointer; display:inline-block; *zoom:1;*display:inline; }
+.artZoomBox a.maxImgLink .maxImg { padding:5px; background:#FFF; border:solid 1px #CCC; }
+
+a.miniImg:hover,
+.artZoomBox .maxImgLink .maxImg,
+.artZoomBox .tool span { border-color:#8294C8; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius:5px; -moz-box-shadow: 0 0 3px rgba(58, 110, 165, 0.5); -webkit-box-shadow: 0 0 3px rgba(58, 110, 165, 0.5); box-shadow: 0 0 3px rgba(58, 110, 165, 0.5); }

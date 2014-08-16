@@ -1,0 +1,16 @@
+.author{font-size:16px;line-height:1.5em;}
+.rss,.go_home{color:#fff;float:right;margin:0 0.5em;font-size:12px;}
+.rss:hover,.go_home:hover{color:#f00;}
+.article p{line-height:1.5rem;text-indent:2em;}
+.article .header{color:#333;font-size:14px;}
+.article .header .push_date{color:#666;font-size:12px;float:right;}
+.article .ui.list .content{display:block;}
+.article .ui.list .content .header{padding:5px 0;}
+.article .ui.list .content p{text-indent:2em;line-height:1.5rem;}
+.page_title{font-size:16px;padding:5px 0;text-align:center;}
+.page_date{text-align:center;color:#069;}
+.read_more a:link    {color:blue;}
+.read_more a:visited {color:blue;}
+.read_more a:hover   {color:red;}
+.read_more a:active  {color:yellow;}
+#footer .ui.list a{color:#fff;font-size:12px;}

@@ -1,0 +1,29 @@
+	<div id="footer">
+		<div class="ui inverted segment">
+			<div class="container">
+				<div class="ui divided horizontal list">
+				  <div class="item"><a href="http://www.cnblogs.com/cuc-ygh/">博客园</a></div>
+				  <div class="item"><a href="http://www.oschina.net/">开源中国</a></div>
+				  <div class="item"><a href="http://academy.fengniao.com/">蜂鸟网</a></div>
+				  <div class="item"><a href="http://dev.duoshuo.com/">多说评论</a></div>
+				  <div class="item"><a href="http://www.woxihuan.com/">我喜欢</a></div>
+				  <div class="item"><a href="http://huaban.com/all/">花瓣网</a></div>
+				  <div class="item"><a href="http://mp3.baidu.com/">百度音乐</a></div>
+				  <div class="item"><a href="http://www.uisdc.com/">优设</a></div>
+				  <div class="item"><a href="http://appui.mobi/">APP设计</a></div>
+				  <div class="item"><a href="http://joome.net/">Joome</a></div>
+				  <div class="item"><a href="http://ued.taobao.org/blog/">淘宝UED</a></div>
+				  <div class="item"><a href="http://cdc.tencent.com/">腾讯CDC</a></div>
+				  <div class="item"><a href="http://www.zhihu.com/">知乎</a></div>
+				  <div class="item"><a href="http://www.75team.com/">奇舞团</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</body>
+	<script type="text/javascript" src="/assets/js/lib/jquery/1.11.0/jquery.js"></script>
+	<!-- <script type="text/javascript" src="/assets/js/gallery/duoshuo/1.0.0/embed.js"></script> -->
+	{% for js in page.js %}
+		<script type="text/javascript" src="/assets/js/{{ js }}"></script>
+	{% endfor %}
+</html>
