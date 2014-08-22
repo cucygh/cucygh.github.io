@@ -58,11 +58,11 @@ own: 原创
 
 绘图工具：paint.js
 
-<iframe width="100%" height="600" src="http://jsfiddle.net/cuc_ygh/ypa7pdrv/1/embedded/js/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="600" src="http://jsfiddle.net/cuc_ygh/ypa7pdrv/7/js/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 控制器操作：control.js
 
-<iframe width="100%" height="600" src="http://jsfiddle.net/cuc_ygh/ypa7pdrv/2/embedded/js/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="600" src="http://jsfiddle.net/cuc_ygh/ypa7pdrv/6/js/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 ### 效果图
 
