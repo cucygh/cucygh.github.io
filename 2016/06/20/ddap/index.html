@@ -84,15 +84,36 @@
 
 
 
-<meta name="description" content="前端里不懈折腾的铁狮子">
-<meta property="og:type" content="website">
-<meta property="og:title" content="快乐动起来">
-<meta property="og:url" content="http://cucygh.github.io/index.html">
+<meta name="description" content="在Web业务开发中经常遇到广告加载及管理的问题，举例如下：
+页面中具有多个广告位，而且每家广告的代码风格和内容不尽相同
+一个广告位需要投放多家广告，如何在客户端开启A/B测试及动态加载广告代码
+如何对每个广告进行准确的数据统计（PV、UV、Reffer）
+如何在引入引用的页面上摒弃杂乱的广告代码
+
+需求分析开发一个广告管理器的模块与业务进行解耦。不管接入广告的数量有多大、A/B测试有多复杂，在开发">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Web客户端广告分发及数据统计">
+<meta property="og:url" content="http://cucygh.github.io/2016/06/20/ddap/index.html">
 <meta property="og:site_name" content="快乐动起来">
-<meta property="og:description" content="前端里不懈折腾的铁狮子">
+<meta property="og:description" content="在Web业务开发中经常遇到广告加载及管理的问题，举例如下：
+页面中具有多个广告位，而且每家广告的代码风格和内容不尽相同
+一个广告位需要投放多家广告，如何在客户端开启A/B测试及动态加载广告代码
+如何对每个广告进行准确的数据统计（PV、UV、Reffer）
+如何在引入引用的页面上摒弃杂乱的广告代码
+
+需求分析开发一个广告管理器的模块与业务进行解耦。不管接入广告的数量有多大、A/B测试有多复杂，在开发">
+<meta property="og:image" content="http://7xrn7f.com1.z0.glb.clouddn.com/16-6-20/87475335.jpg">
+<meta property="og:updated_time" content="2016-06-20T15:46:49.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="快乐动起来">
-<meta name="twitter:description" content="前端里不懈折腾的铁狮子">
+<meta name="twitter:title" content="Web客户端广告分发及数据统计">
+<meta name="twitter:description" content="在Web业务开发中经常遇到广告加载及管理的问题，举例如下：
+页面中具有多个广告位，而且每家广告的代码风格和内容不尽相同
+一个广告位需要投放多家广告，如何在客户端开启A/B测试及动态加载广告代码
+如何对每个广告进行准确的数据统计（PV、UV、Reffer）
+如何在引入引用的页面上摒弃杂乱的广告代码
+
+需求分析开发一个广告管理器的模块与业务进行解耦。不管接入广告的数量有多大、A/B测试有多复杂，在开发">
+<meta name="twitter:image" content="http://7xrn7f.com1.z0.glb.clouddn.com/16-6-20/87475335.jpg">
 
 
 
@@ -113,9 +134,9 @@
 
 
 
-  <link rel="canonical" href="http://cucygh.github.io/"/>
+  <link rel="canonical" href="http://cucygh.github.io/2016/06/20/ddap/"/>
 
-  <title> 快乐动起来 </title>
+  <title> Web客户端广告分发及数据统计 | 快乐动起来 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -136,9 +157,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -215,9 +234,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -237,10 +256,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/06/20/ddap/" itemprop="url">
-                  Web客户端广告分发及数据统计
-                </a>
+                Web客户端广告分发及数据统计
               
             
           </h1>
@@ -280,9 +296,7 @@
       
 
       
-        
-          
-            <h3 id="在Web业务开发中经常遇到广告加载及管理的问题，举例如下："><a href="#在Web业务开发中经常遇到广告加载及管理的问题，举例如下：" class="headerlink" title="在Web业务开发中经常遇到广告加载及管理的问题，举例如下："></a>在Web业务开发中经常遇到广告加载及管理的问题，举例如下：</h3><ol>
+        <h3 id="在Web业务开发中经常遇到广告加载及管理的问题，举例如下："><a href="#在Web业务开发中经常遇到广告加载及管理的问题，举例如下：" class="headerlink" title="在Web业务开发中经常遇到广告加载及管理的问题，举例如下："></a>在Web业务开发中经常遇到广告加载及管理的问题，举例如下：</h3><ol>
 <li>页面中具有多个广告位，而且每家广告的代码风格和内容不尽相同</li>
 <li>一个广告位需要投放多家广告，如何在客户端开启A/B测试及动态加载广告代码</li>
 <li>如何对每个广告进行准确的数据统计（PV、UV、Reffer）</li>
@@ -340,16 +354,19 @@
 </ul>
 <h3 id="源代码"><a href="#源代码" class="headerlink" title="源代码"></a>源代码</h3><p><a href="https://github.com/cucygh/ddap/blob/master/ddap.js" target="_blank" rel="external">查看 Github</a></p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
@@ -360,16 +377,15 @@
 
       
       
-        <div class="post-eof"></div>
-      
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -377,6 +393,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -396,8 +416,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -433,6 +462,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#在Web业务开发中经常遇到广告加载及管理的问题，举例如下："><span class="nav-number">1.</span> <span class="nav-text">在Web业务开发中经常遇到广告加载及管理的问题，举例如下：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#需求分析"><span class="nav-number">2.</span> <span class="nav-text">需求分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实现方案"><span class="nav-number">3.</span> <span class="nav-text">实现方案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装使用"><span class="nav-number">4.</span> <span class="nav-text">安装使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#API设计"><span class="nav-number">5.</span> <span class="nav-text">API设计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#源代码"><span class="nav-number">6.</span> <span class="nav-text">源代码</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -529,6 +569,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
