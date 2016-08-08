@@ -84,15 +84,25 @@
 
 
 
-<meta name="description" content="前端里不懈折腾的铁狮子">
-<meta property="og:type" content="website">
-<meta property="og:title" content="快乐动起来">
-<meta property="og:url" content="http://cucygh.github.io/index.html">
+<meta name="description" content="document.write知多少原生JavaScript的API里document.write绝对是重量级的。如果大家对他的使用场景、注意事项、原理等不明晰，欢迎阅读本文。
+使用场景
+第三方合作
+ 123456&amp;lt;div id=&quot;third&quot;&amp;gt;	&amp;lt;!--如果是A合作方需要插入iframe--&amp;gt;	iframe	&amp;lt;!--如果是B合作方需要插入ul--&amp;gt;	ul[列表内">
+<meta property="og:type" content="article">
+<meta property="og:title" content="document.write知多少">
+<meta property="og:url" content="http://cucygh.github.io/2016/08/08/jswrite/index.html">
 <meta property="og:site_name" content="快乐动起来">
-<meta property="og:description" content="前端里不懈折腾的铁狮子">
+<meta property="og:description" content="document.write知多少原生JavaScript的API里document.write绝对是重量级的。如果大家对他的使用场景、注意事项、原理等不明晰，欢迎阅读本文。
+使用场景
+第三方合作
+ 123456&amp;lt;div id=&quot;third&quot;&amp;gt;	&amp;lt;!--如果是A合作方需要插入iframe--&amp;gt;	iframe	&amp;lt;!--如果是B合作方需要插入ul--&amp;gt;	ul[列表内">
+<meta property="og:updated_time" content="2016-08-08T15:27:29.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="快乐动起来">
-<meta name="twitter:description" content="前端里不懈折腾的铁狮子">
+<meta name="twitter:title" content="document.write知多少">
+<meta name="twitter:description" content="document.write知多少原生JavaScript的API里document.write绝对是重量级的。如果大家对他的使用场景、注意事项、原理等不明晰，欢迎阅读本文。
+使用场景
+第三方合作
+ 123456&amp;lt;div id=&quot;third&quot;&amp;gt;	&amp;lt;!--如果是A合作方需要插入iframe--&amp;gt;	iframe	&amp;lt;!--如果是B合作方需要插入ul--&amp;gt;	ul[列表内">
 
 
 
@@ -113,9 +123,9 @@
 
 
 
-  <link rel="canonical" href="http://cucygh.github.io/"/>
+  <link rel="canonical" href="http://cucygh.github.io/2016/08/08/jswrite/"/>
 
-  <title> 快乐动起来 </title>
+  <title> document.write知多少 | 快乐动起来 </title>
   <style media="screen">
       a[href^='http://www.cnzz.com/stat']{
           display: none!important;
@@ -141,9 +151,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -230,9 +238,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -252,10 +260,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/08/08/jswrite/" itemprop="url">
-                  document.write知多少
-                </a>
+                document.write知多少
               
             
           </h1>
@@ -295,9 +300,7 @@
       
 
       
-        
-          
-            <h2 id="document-write知多少"><a href="#document-write知多少" class="headerlink" title="document.write知多少"></a>document.write知多少</h2><p>原生JavaScript的API里document.write绝对是重量级的。如果大家对他的使用场景、注意事项、原理等不明晰，欢迎阅读本文。</p>
+        <h2 id="document-write知多少"><a href="#document-write知多少" class="headerlink" title="document.write知多少"></a>document.write知多少</h2><p>原生JavaScript的API里document.write绝对是重量级的。如果大家对他的使用场景、注意事项、原理等不明晰，欢迎阅读本文。</p>
 <h3 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h3><ol>
 <li><p>第三方合作</p>
  <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"third"</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!--如果是A合作方需要插入iframe--&gt;</span></span><br><span class="line">	iframe</span><br><span class="line">	<span class="comment">&lt;!--如果是B合作方需要插入ul--&gt;</span></span><br><span class="line">	ul[列表内容]</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -339,16 +342,19 @@
 <pre><code>所以使用document.write一定要知道执行的时机。
 </code></pre><h3 id="疑问"><a href="#疑问" class="headerlink" title="疑问"></a>疑问</h3><p>如果在一个指定位置异步加载多家的广告代码，如何实现呢？想知道答案下回分解。</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
@@ -356,188 +362,32 @@
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/06/20/ddap/" rel="next" title="Web客户端广告分发及数据统计">
+                <i class="fa fa-chevron-left"></i> Web客户端广告分发及数据统计
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2016/06/20/ddap/" itemprop="url">
-                  Web客户端广告分发及数据统计
-                </a>
-              
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-06-20T23:08:44+08:00" content="2016-06-20">
-              2016-06-20
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/原创/" itemprop="url" rel="index">
-                    <span itemprop="name">原创</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h3 id="在Web业务开发中经常遇到广告加载及管理的问题，举例如下："><a href="#在Web业务开发中经常遇到广告加载及管理的问题，举例如下：" class="headerlink" title="在Web业务开发中经常遇到广告加载及管理的问题，举例如下："></a>在Web业务开发中经常遇到广告加载及管理的问题，举例如下：</h3><ol>
-<li>页面中具有多个广告位，而且每家广告的代码风格和内容不尽相同</li>
-<li>一个广告位需要投放多家广告，如何在客户端开启A/B测试及动态加载广告代码</li>
-<li>如何对每个广告进行准确的数据统计（PV、UV、Reffer）</li>
-<li>如何在引入引用的页面上摒弃杂乱的广告代码</li>
-</ol>
-<h3 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h3><p>开发一个广告管理器的模块与业务进行解耦。不管接入广告的数量有多大、A/B测试有多复杂，在开发的视角应该是同意复杂度的，而且与业务是不相关的。当然，开发人员对这些广告的管理也应该是最简单的，需要接近0工作量的才是最好。</p>
-<p>管理器应具备以下功能：</p>
-<ul>
-<li><p><b>广告配置</b></p>
-<p>  即广告内容的定义，每一个广告需要一个唯一的名称来标识。</p>
-</li>
-<li><p><b>流量分配</b></p>
-<p>  无论是通过客户端还是服务端来控制流量分配，该API直接输出命中的广告标识。具体的逻辑和实现在内部完成。任何开发可以覆盖该方法实现自己的分配方案。</p>
-</li>
-<li><p><b>加载机制</b></p>
-<p>  根据配置动态的加载指定的广告脚本，管理脚本加载和配置的情况。</p>
-</li>
-<li><p><b>数据收集</b></p>
-<p>  根据脚本的加载情况，需要将加载信息传递给数据统计平台，比如加载成功、加载失败、安装成功。</p>
-</li>
-<li><p><b>数据统计</b></p>
-<p>  需要有平台对收集的数据进行统计、分类、展示。</p>
-</li>
-</ul>
-<h3 id="实现方案"><a href="#实现方案" class="headerlink" title="实现方案"></a>实现方案</h3><ul>
-<li>使用原生Js进行广告管理模块的开发，不依赖任何第三方Javascript库</li>
-<li>利用第三方数据平台进行数据收集和统计，如Google Analyze或CNZZ等</li>
-</ul>
-<h3 id="安装使用"><a href="#安装使用" class="headerlink" title="安装使用"></a>安装使用</h3><ol>
-<li><p>安装广告模块管理器</p>
- <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/lib/ddap.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装第三方数据统计代码</p>
- <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://s95.cnzz.com/z_stat.php?id=***&amp;web_id=***"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>定义广告</p>
- <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">Q.insertAd(&#123;</span><br><span class="line">  name: <span class="string">'tb_side_1'</span>,</span><br><span class="line">  scripts: [&#123;</span><br><span class="line">     url: <span class="string">'http://p.tanx.com/ex?i=mm_32479643_3494618_56760779'</span>,</span><br><span class="line">     id: <span class="string">'tanx-x'</span></span><br><span class="line">  &#125;]</span><br><span class="line">&#125;);</span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装广告</p>
- <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line"><span class="built_in">document</span>.write(<span class="string">'&lt;a style="display:none!important" id="tan-x"&gt;&lt;/a&gt;'</span>);</span><br><span class="line"><span class="keyword">var</span> Q = <span class="built_in">window</span>[<span class="string">'tt_ddap'</span>] ? <span class="built_in">window</span>[<span class="string">'tt_ddap'</span>].Q : <span class="literal">false</span>;</span><br><span class="line"><span class="keyword">if</span> (Q) &#123;</span><br><span class="line">	<span class="keyword">var</span> name=Q.transfer();</span><br><span class="line">	Q.start(name);</span><br><span class="line">&#125;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>数据统计</p>
-<p><img src="http://7xrn7f.com1.z0.glb.clouddn.com/16-6-20/87475335.jpg" alt=""></p>
-</li>
-</ol>
-<h3 id="API设计"><a href="#API设计" class="headerlink" title="API设计"></a>API设计</h3><ul>
-<li>ads<br>  广告配置存储</li>
-<li>loaded<br>  单个脚本加载回调</li>
-<li>createScript<br>  加载单个脚本</li>
-<li>addScript<br>  加载所有脚本</li>
-<li>sendToGA<br>  向第三方发送统计数据</li>
-<li>insertAd<br>  定义广告代码</li>
-<li>start<br>  加载广告</li>
-<li>transfer<br>  控制流量分配</li>
-</ul>
-<h3 id="源代码"><a href="#源代码" class="headerlink" title="源代码"></a>源代码</h3><p><a href="https://github.com/cucygh/ddap/blob/master/ddap.js" target="_blank" rel="external">查看 Github</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -545,6 +395,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -564,8 +418,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://7xrn7f.com1.z0.glb.clouddn.com/16-6-21/89488305.jpg"
@@ -615,6 +478,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#document-write知多少"><span class="nav-number">1.</span> <span class="nav-text">document.write知多少</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用场景"><span class="nav-number">1.1.</span> <span class="nav-text">使用场景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注意事项"><span class="nav-number">1.2.</span> <span class="nav-text">注意事项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#工作原理"><span class="nav-number">1.3.</span> <span class="nav-text">工作原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#疑问"><span class="nav-number">1.4.</span> <span class="nav-text">疑问</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -711,6 +585,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
