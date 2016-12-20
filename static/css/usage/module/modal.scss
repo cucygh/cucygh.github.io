@@ -1,0 +1,20 @@
+@import "../../lib/fragment/yo-modal.scss";
+@import "../../lib/ani/fade-out.scss";
+@import "../../lib/ani/fade-in.scss";
+
+.modal-wrap{
+  @include _modal;
+  @include align-items(flex-end);
+  background: none;
+  > .cont{
+    z-index: 1000;
+  }
+  .yo-modal{
+    -webkit-animation-name: fade-out;
+  	animation-name: fade-out;
+  }
+  &.active .yo-modal{
+    -webkit-animation-name: fade-in;
+    animation-name: fade-in;
+  }
+}
