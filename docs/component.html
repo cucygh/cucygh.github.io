@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+  <meta name="description" content="description of your site">
+  <meta name="author" content="author of the site">
+  <title>h5kit 组件</title>
+  <link rel="stylesheet" href="source/main.css"/>
+  
+</head>
+<body>
+    <div class="ydoc">
+      <header class="ydoc-header">
+        <div class="ydoc-header-area">
+            
+            <a href="#/" class="navbar-brand">h5kit</a>
+            
+            <button class="ydocIcon navbar-toggle">&#xf020;</button>
+            <nav class="ydoc-nav">
+              <ul class="navbar-left">
+                
+                    
+                    <li class="">
+                        
+                        <a href="about.html">起步</a>
+                        
+                    </li>
+                    
+                    <li class="">
+                        
+                        <a href="page.html">布局</a>
+                        
+                    </li>
+                    
+                    <li class="active">
+                        
+                        <a href="component.html">组件</a>
+                        
+                    </li>
+                    
+                    <li class="">
+                        
+                        <a href="#" target="_blank">示例</a>
+                        
+                    </li>
+                    
+                    <li class="">
+                        
+                        <a href="https://github.com/cucygh/h5kit" target="_blank">Github</a>
+                        
+                    </li>
+                    
+                
+              </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- <header style="height:20px"></header> -->
+    
+      <!-- Docs page layout -->
+      
+
+      <div class="ydoc-container">
+        
+          
+          <div class="ydoc-container-content" id="readme">
+              <article class="markdown-body">
+                  
+                  <h2 id="功能组件">功能组件</h2><p><a name="top"></a></p>
+<p>除了布局相关的组件，还开发了常见的功能组件，包括：</p>
+<ul>
+<li><a href="#dialog">模态框（dialog）</a></li>
+<li><a href="#list">列表（list）</a></li>
+<li><a href="#grid">网格（grid）</a></li>
+<li><a href="#scroll">滚动（scroll）</a></li>
+<li><a href="#search">搜索（search）</a></li>
+<li><a href="#sidepanel">侧滑菜单（sidePanel）</a></li>
+<li><a href="#btn">按钮（btn）</a></li>
+<li><a href="#action">活动清单（action）</a></li>
+</ul>
+<p><a name="dialog"></a></p>
+<h3 id="模态框（dialog）">模态框（dialog）</h3><p>模态框是 App 应用中不可或缺的一种组件，然而模态框的表现形式和承载功能形形色色。从组件封装的角度讲要能适应这种灵活性，为开发者提供更多的便利。</p>
+<p><strong>基本使用：</strong></p>
+<pre><code class="lang-html">&lt;v-dialog :show=&quot;show&quot; v-on:pclose=&quot;close&quot; title=&quot;dialog标题&quot; content=&quot;模态框展示的文本&quot; :ok=&quot;ok&quot; :cancel=&quot;cancel&quot; :isTitle=&quot;isTitle&quot;&gt;
+
+&lt;/v-dialog&gt;
+</code></pre>
+<ul>
+<li>show 控制模态框的显示状态</li>
+<li>close 关闭按钮的响应函数</li>
+<li>title 模态框的标题</li>
+<li>content 模态框展示的文本</li>
+<li>ok 点击“确认”的响应函数</li>
+<li>cancel 点击“取消”的响应函数</li>
+<li>isTitle 是否显示标题</li>
+</ul>
+<p><strong>自定义头部</strong></p>
+<pre><code class="lang-html">&lt;v-dialog :show=&quot;show&quot; v-on:pclose=&quot;close&quot; title=&quot;dialog标题&quot; content=&quot;模态框展示的文本&quot; :ok=&quot;ok&quot; :cancel=&quot;cancel&quot; :isTitle=&quot;isTitle&quot;&gt;
+  &lt;custome-header slot=&quot;header&quot;&gt;&lt;/custome-header&gt;
+&lt;/v-dialog&gt;
+</code></pre>
+<p><strong>自定义内容</strong></p>
+<pre><code class="lang-html">&lt;v-dialog :show=&quot;show&quot; v-on:pclose=&quot;close&quot; title=&quot;dialog标题&quot; content=&quot;模态框展示的文本&quot; :ok=&quot;ok&quot; :cancel=&quot;cancel&quot; :isTitle=&quot;isTitle&quot;&gt;
+  &lt;custome-content slot=&quot;content&quot;&gt;&lt;/custome-content&gt;
+&lt;/v-dialog&gt;
+</code></pre>
+<p><strong>自定义尾部</strong></p>
+<pre><code class="lang-html">&lt;v-dialog :show=&quot;show&quot; v-on:pclose=&quot;close&quot; title=&quot;dialog标题&quot; content=&quot;模态框展示的文本&quot; :ok=&quot;ok&quot; :cancel=&quot;cancel&quot; :isTitle=&quot;isTitle&quot;&gt;
+  &lt;custome-footer slot=&quot;footer&quot;&gt;&lt;/custome-footer&gt;
+&lt;/v-dialog&gt;
+</code></pre>
+<p><a name="list"></a></p>
+<h3 id="列表（list）">列表（list）</h3><p><a name="grid"></a></p>
+<h3 id="网格（grid）">网格（grid）</h3><p><a name="scroll"></a></p>
+<h3 id="滚动（scroll）">滚动（scroll）</h3><p><a name="search"></a></p>
+<h3 id="搜索（search）">搜索（search）</h3><p><a name="sidepael"></a></p>
+<h3 id="侧滑菜单（sidePanel）">侧滑菜单（sidePanel）</h3><p><a name="btn"></a></p>
+<h3 id="按钮（btn）">按钮（btn）</h3><p><a name="action"></a></p>
+<h3 id="活动清单（action）">活动清单（action）</h3><p><a href="#top" style="position:fixed;bottom:50px;right:50px;">回到顶部</a></p>
+
+              </article>
+          </div>
+          
+        
+      </div>
+     
+      <footer class="footer">
+        <div class="copyright">
+            
+        </div>
+      </footer>
+    </div>
+    <script src="source/main.js"></script>
+    <script src="source/app.js"></script>
+    
+    
+
+    
+
+</body>
+</html>
