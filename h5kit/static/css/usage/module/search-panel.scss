@@ -1,0 +1,53 @@
+.search-panel{
+  // 搜索框
+  .yo-search{
+    background: #fff;
+    margin-bottom: 0.4em;
+    @include _prefix(box-shadow,2px 2px 5px #ccc);
+    .input{
+      background: #eee;
+    }
+    .yo-btn{
+      background: #fff;
+      color: #555;
+    }
+  }
+  // 最近搜索
+  .yo-list{
+    max-height: 352px;
+    overflow: auto;
+    &:after{
+      display: none;
+    }
+  }
+  .item{
+    .text{
+      flex: 1;
+      padding: 0 1em 0 1.5em;
+      &:before{
+        content: "\e615";
+        font-family: uikit!important;
+        position: absolute;
+        left: 0.5em;
+        color: #999;
+      }
+      &:after{
+        content: "\e790";
+        font-family: uikit!important;
+        position: absolute;
+        right: 0.5em;
+        color: #999;
+      }
+    }
+  }
+  // 全部搜索按钮
+  .yo-btn{
+    background: #fff;
+    color: #666;
+    border-radius: 0;
+    &:after{
+      border-radius: 0;
+      border-color: #eee;
+    }
+  }
+}

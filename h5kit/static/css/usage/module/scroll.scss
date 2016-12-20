@@ -1,0 +1,64 @@
+$height: 0.4rem;
+
+.yo-scroll {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+
+  .inner {
+    position: absolute;
+    top: -$height;
+    width: 100%;
+    transition-duration: 300ms;
+  };
+
+  .pull-refresh {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: $height;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &.touch .inner {
+    transition-duration: 0ms;
+  }
+
+  &.down {
+    .down-tip {
+      display: block;
+    }
+  }
+
+  &.up {
+    .up-tip {
+      display: block;
+    }
+  }
+
+  &.refresh {
+    .refresh-tip {
+      display: block;
+    }
+  }
+
+  .down-tip,
+  .refresh-tip,
+  .up-tip {
+    display: none;
+  }
+
+  .load-more{
+    height: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
