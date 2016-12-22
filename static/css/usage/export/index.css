@@ -725,7 +725,7 @@ a {
 
 @font-face {
   font-family: uikit;
-  src: url(//at.alicdn.com/t/font_jzs4kpezani5dn29.woff) format("woff"), url(//at.alicdn.com/t/font_jzs4kpezani5dn29.ttf) format("truetype");
+  src: url(//at.alicdn.com/t/font_oq69cri15yi4quxr.woff) format("woff"), url(//at.alicdn.com/t/font_oq69cri15yi4quxr.ttf) format("truetype");
 }
 
 .yo-ico {
@@ -2468,4 +2468,119 @@ a {
 .yo-grid .grid-item:after {
   border-top: none;
   border-left: none;
+}
+
+/**
+ * @module element
+ * @method yo-checked
+ * @version 3.0.0
+ * @description 构造单选多选的自定义使用方法，可同时作用于 checkbox 与 radio
+ * @demo http://doyoe.github.io/Yo/demo/element/yo-checked.html
+ * @param {String} $name 定义扩展名称 <3.0.0>
+ * @param {String} $content 标记符号（使用iconfont编码，可以是对勾，圆点或任意字符） <3.0.0>
+ * @param {Length} $size 元件大小 <3.0.0>
+ * @param {Length} $font-size 标记符号大小 <3.0.0>
+ * @param {Length} $border-width 元件边框厚度 <3.0.0>
+ * @param {Color} $border-color 元件边框色 <3.0.0>
+ * @param {Color} $bgcolor 元件背景色 <3.0.0>
+ * @param {Color} $color 标记符号颜色 <3.0.0>
+ * @param {Color} $on-border-color 选中时的元件边框色 <3.0.0>
+ * @param {Color} $on-bgcolor 选中时的元件背景色 <3.0.0>
+ * @param {Color} $on-color 选中时的标记符号颜色 <3.0.0>
+ * @param {Length} $radius 元件外框圆角半径 <3.0.0>
+ */
+.yo-checked {
+  display: inline-block;
+  position: relative;
+  width: 0.2rem;
+  height: 0.2rem;
+  font-size: 0.12rem;
+  font-family: uikit;
+  vertical-align: middle;
+}
+
+.yo-checked > input,
+.yo-checked > .type {
+  width: 100%;
+  height: 100%;
+}
+
+.yo-checked > input {
+  position: absolute;
+  opacity: 0;
+}
+
+.yo-checked > .type {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  word-wrap: break-word;
+  word-break: break-all;
+  position: relative;
+  border-radius: 0.05rem;
+}
+
+.yo-checked > .type::after {
+  pointer-events: none;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  content: "\0020";
+  border-style: solid;
+  border-width: 0;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+@media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
+  .yo-checked > .type::after {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.05rem;
+  }
+}
+
+@media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
+  .yo-checked > .type::after {
+    width: 200%;
+    height: 200%;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    border-radius: 0.1rem;
+  }
+}
+
+@media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
+  .yo-checked > .type::after {
+    width: 300%;
+    height: 300%;
+    -webkit-transform: scale(0.33333);
+    transform: scale(0.33333);
+    border-radius: 0.15rem;
+  }
+}
+
+.yo-checked > .type::before {
+  content: "";
+  color: transparent;
+}
+
+.yo-checked > input:checked + .type::before {
+  color: #2b94ff;
+}
+
+.yo-checked > input:disabled + .type::before {
+  color: rgba(77, 77, 77, 0);
+}
+
+.yo-checked > input:checked:disabled + .type::before {
+  color: #c4e1ff;
 }
