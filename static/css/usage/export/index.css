@@ -2584,3 +2584,100 @@ a {
 .yo-checked > input:checked:disabled + .type::before {
   color: #c4e1ff;
 }
+
+.yo-checked-a > .type::after {
+  border-width: 1px;
+  border-color: #ccc;
+}
+
+.yo-checked-a > input:disabled + .type::after {
+  border-color: #ebebeb;
+}
+
+.yo-checked-b > .type::after {
+  border-width: 1px;
+  border-color: #ccc;
+}
+
+.yo-checked-b > input:checked + .type {
+  background-color: #2b94ff;
+}
+
+.yo-checked-b > input:checked + .type::after {
+  border-color: #2b94ff;
+}
+
+.yo-checked-b > input:checked + .type::before {
+  color: #fff;
+}
+
+.yo-checked-b > input:disabled + .type::after {
+  border-color: #ebebeb;
+}
+
+.yo-checked-b > input:checked:disabled + .type {
+  background-color: #78bbff;
+}
+
+.yo-checked-b > input:checked:disabled + .type::after {
+  border-color: #68b3ff;
+}
+
+.yo-checked-b > input:checked:disabled + .type::before {
+  color: white;
+}
+
+.yo-checked-c > .type {
+  border-radius: 100%;
+}
+
+.yo-checked-c > .type::after {
+  border-width: 1px;
+  border-color: #ccc;
+}
+
+@media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
+  .yo-checked-c > .type::after {
+    border-radius: 100%;
+  }
+}
+
+@media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
+  .yo-checked-c > .type::after {
+    border-radius: 200%;
+  }
+}
+
+@media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
+  .yo-checked-c > .type::after {
+    border-radius: 300%;
+  }
+}
+
+.yo-checked-c > input:checked + .type {
+  background-color: #2b94ff;
+}
+
+.yo-checked-c > input:checked + .type::after {
+  border-color: #2b94ff;
+}
+
+.yo-checked-c > input:checked + .type::before {
+  color: #fff;
+}
+
+.yo-checked-c > input:disabled + .type::after {
+  border-color: #ebebeb;
+}
+
+.yo-checked-c > input:checked:disabled + .type {
+  background-color: #78bbff;
+}
+
+.yo-checked-c > input:checked:disabled + .type::after {
+  border-color: #68b3ff;
+}
+
+.yo-checked-c > input:checked:disabled + .type::before {
+  color: white;
+}

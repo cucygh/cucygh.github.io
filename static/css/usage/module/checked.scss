@@ -1,1 +1,24 @@
 @import "../../lib/element/yo-checked.scss";
+
+@include yo-checked(
+  $name:'a',
+  $border-color:#ccc,
+  $border-width:1px
+);
+@include yo-checked(
+  $name:'b',
+  $border-color:#ccc,
+  $border-width:1px,
+  $on-bgcolor:#2b94ff,
+  $on-color:#fff,
+  $on-border-color:#2b94ff
+);
+@include yo-checked(
+  $name:'c',
+  $border-color:#ccc,
+  $border-width:1px,
+  $on-bgcolor:#2b94ff,
+  $on-color:#fff,
+  $on-border-color:#2b94ff,
+  $radius:100%
+);
